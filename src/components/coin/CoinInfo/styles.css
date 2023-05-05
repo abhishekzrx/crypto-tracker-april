@@ -1,0 +1,17 @@
+.desc-wrapper{
+         display: block;
+  background-color: var(--darkgrey);
+  margin: 1rem 2rem;
+  border-radius: 0.8rem;
+  padding:1rem;
+  width: 90%;
+  font-size: x-small;
+}
+.coin-info-desc a{
+       
+         text-decoration: underline !important;
+}
+.coin-info-desc a:hover{
+         color: var(--blue) !important;
+        
+}

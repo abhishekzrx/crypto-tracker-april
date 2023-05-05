@@ -1,0 +1,105 @@
+.Grid-container{
+         width: 200px;
+         border: 2px solid var(--darkgrey);
+         background-color: var(--darkgrey);
+         border-radius: 1rem;
+         gap: 1rem;
+         
+}
+.Grid-container:hover{
+         border-color: var(--green);
+         transition: all in 0.3s;
+}
+.Grid-container-red:hover{
+         border-color: var(--red);
+         transition: all in 0.3s;
+}
+.info-flex{
+         display: flex;
+         justify-content: flex-start;
+         align-items: center;
+         gap: 1rem;
+         margin: 1rem 1.5rem;
+}
+.coin-logo{
+         max-width: 40px;
+}
+.name-col{
+         display: flex;
+         flex-direction: column;
+         gap: 0.5rem;
+}
+.coin-symbol{
+        color: var(--white);
+        text-transform: capitalize;
+        font-weight: 800;
+        font-size: 0.8rem;
+        margin: 0;
+}
+.coin-name{
+         color: var(--grey);
+         text-transform: capitalize;
+         font-weight: light;
+         font-size: 0.7rem;
+         margin: 0;
+}
+.chip-flex{
+         display: flex;
+         justify-content: flex-start;
+         gap:1rem;
+         align-items: center;
+         margin: 1rem 1.25rem;
+}
+.price-chip{
+         border: 1px solid var(--green);
+         border-radius: 4rem;
+         padding: 0.35rem 0.8rem;
+         text-align: center;
+         font-size: 0.75rem;
+         font-weight: 800;
+         color: var(--green);
+        
+}
+.price-chip:hover{
+ background-color: var(--green);
+ color: var(--white);
+ transition: all in 0.3s;
+}
+
+.icon-chip{
+         border: 1px solid var(--green);
+       
+         color: var(--green);
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         border-radius: 50%;
+        
+}
+.icon-chip:hover{
+  background-color: var(--green);
+  color: white;
+  transition: all in 0.3s;
+}
+.chip-red{
+         border: 1px solid var(--red) !important;  
+         color: var(--red) !important;
+        
+}
+.chip-red:hover{
+         background-color: var(--red) !important;
+         color: var(--white) !important;
+}
+.info-container{
+    margin: 1.5rem;
+}
+.info-container h3{
+         color: var(--green);
+         font-size: 1rem;
+}
+.total-vol,.total-cap{
+         color:var(--grey);
+         font-size: 0.6rem;
+         font-weight: bold;
+         white-space: nowrap;
+}
