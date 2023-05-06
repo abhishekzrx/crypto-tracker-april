@@ -1,6 +1,6 @@
 import { convertDate } from "./convertDate"
 export const settingChartData=(setChartData,prices1,prices2)=>{
-  if(prices2){
+  if(prices2 && prices1){
     setChartData({
       labels: prices1.map((date)=>convertDate(date[0])), /// x-axis data ,represent prices
       datasets: [{
@@ -10,7 +10,7 @@ export const settingChartData=(setChartData,prices1,prices2)=>{
             borderWidth:1,
             fill:false,
             tension:0.25,
-            pointRadius:0,
+            pointRadius:1,
             yAxisID: 'crypto1'
            },
            {
@@ -20,7 +20,7 @@ export const settingChartData=(setChartData,prices1,prices2)=>{
             borderWidth:1,
             fill:false,
             tension:0.25,
-            pointRadius:0,
+            pointRadius:1,
             yAxisID: 'crypto2'
           }
         ]
@@ -28,15 +28,13 @@ export const settingChartData=(setChartData,prices1,prices2)=>{
      }else{ // this is only for when we have  only  one coin selection
          setChartData({
                   labels: prices1.map((date)=>convertDate(date[0])),   // this is x axis
-                  datasets: [{  
-                                                           //this is y axis
+                  datasets: [{//this is y axis
                         data:prices1.map((price)=>price[1]),
                         borderColor: "#3a88e9",
                         borderWidth:2,
                         fill:false,
-                        tension:0.125,
-                        pointRadius:2,
-                       
+                        tension:0.25,
+                        pointRadius:1,
                         pointHoverRadius: 10,
                         backgroundColor: 'rgba(58, 128, 233, 0.1)',
                         yAxisID: 'crypto1'

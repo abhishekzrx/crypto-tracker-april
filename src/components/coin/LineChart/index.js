@@ -34,8 +34,8 @@ function LineChart({chartData,pricetype,multiAxis}){
                            },
                             crypto2: {
                                type: 'linear',
-                           // display: multiAxis?true:false,
-                            display:true,
+                           display: multiAxis?true:false,
+                            // display:true,
                            position: 'right',
                               ticks: {
                                       callback: function(value, index, ticks) {

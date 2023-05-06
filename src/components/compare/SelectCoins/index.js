@@ -4,7 +4,7 @@ import { MenuItem, Select } from '@mui/material';
 import "./styles.css"
 const SelectCoins =({crypto1,crypto2,handleCoinChange})=> {
         const[allCoins,setAllCoins]=useState([]);
-         const styles={
+        const styles={
                   height:"2rem",
                   color:"var(--white)",
                   fieldset: {

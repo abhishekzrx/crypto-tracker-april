@@ -30,12 +30,12 @@ export const MainComponent = () => {
           >
             Track crypto through a public api in real time. Visit the dashboard to do so!
           </motion.p>
-
+          
          <motion.div className='btn-flex'
               initial={{opacity:0,x:-50}}
               animate={{opacity:1,x:0}}
               transition={{duration:0.5 ,delay:1}}
-         >
+          >
              <Link to='/Dashboard'>
           <Button 
            onClick={()=>console.log(" clicked ")} text={"Dashboard"}/>
@@ -56,9 +56,7 @@ export const MainComponent = () => {
                  }} 
          />
          <img src={gradient} className='gradient'/>
-        
-        </div>
-        
+        </div> 
     </div>
   )
 }

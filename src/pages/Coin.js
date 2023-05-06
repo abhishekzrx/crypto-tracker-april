@@ -76,6 +76,7 @@ function CoinPage(){
                  <LineChart 
                  chartData={chartData} 
                  pricetype={pricetype} />
+                
                 </div>
                 <div className='grey-wrapper'>
                 <CoinInfo heading={coinData.name} desc={coinData.desc}/>
