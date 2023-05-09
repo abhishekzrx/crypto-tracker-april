@@ -49,7 +49,7 @@ const List = ({coin}) => {
     }
     </Tooltip>
     <Tooltip title="Current price">
-         <td>
+         <td >
             <h3 className='coin-price td-center-align' 
             style={{color:coin.market_cap_change_percentage_24h < 0 ? "var(--red)":"var(--green)"}}>
              $ {coin.current_price.toLocaleString()}
@@ -68,7 +68,7 @@ const List = ({coin}) => {
         <Tooltip title="Market Cap">
         <td className='desktop-td-mkt'>
             <p className='total-cap td-right-align'>
-               $ {coin.market_cap.toLocaleString()}
+               ${coin.market_cap.toLocaleString()}
                {/* ${coin.market_cap.toLocaleString()} */}
             </p>
        </td>

@@ -81,3 +81,18 @@ img {
     font-size: xx-small;
   }
 }
+
+@media only screen and (max-width: 500px) {
+  .coin-price{
+        display: none;
+      }  
+      .total-cap{
+        display: none;
+      }
+      .icon-chip{
+       
+      }
+        
+
+
+}
