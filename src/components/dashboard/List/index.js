@@ -9,15 +9,22 @@ const List = ({coin}) => {
   return (
    <Link to={`/coin/${coin.id}`}>
      <tr className='list-row'>
+      <Tooltip title="coinlogo">
            <td className='td-image'>
                 <img src={coin.image} className='coin-logo' />
             </td>
+      </Tooltip>
        <td>
          <div className='name-col'>
+         <Tooltip title="coin-symbol">
             <p className='coin-symbol'>{coin.symbol}</p>
+          </Tooltip>
+          <Tooltip title="coin-name">
             <p className='coin-name'>{coin.name}</p>
+          </Tooltip>
          </div>
        </td>
+       <Tooltip title=" % Price change in 24h">
      {
          coin.market_cap_change_percentage_24h > 0 ? 
           (<td className='chip-flex'>
@@ -35,10 +42,12 @@ const List = ({coin}) => {
               {coin.market_cap_change_percentage_24h.toFixed(2)}%
             </div>
             <div className="icon-chip chip-red td-icon">
-              <TrendingDownRoundedIcon/>
+              <TrendingDownRoundedIcon  />
             </div>
           </td>)
+         
     }
+    </Tooltip>
     <Tooltip title="Current price">
          <td>
             <h3 className='coin-price td-center-align' 
@@ -48,23 +57,29 @@ const List = ({coin}) => {
             </h3>
          </td>
      </Tooltip>
+     <Tooltip title="Total volume">
          <td>
              <p className='total-vol td-right-align td-total-vol'>
                 $ {coin.total_volume.toLocaleString()}
                 {/* {coin.total_volume.toLocaleString()} 27*/}
              </p>
         </td>
+        </Tooltip>
+        <Tooltip title="Market Cap">
         <td className='desktop-td-mkt'>
             <p className='total-cap td-right-align'>
                $ {coin.market_cap.toLocaleString()}
                {/* ${coin.market_cap.toLocaleString()} */}
             </p>
        </td>
-        <td className='mobile-td-mkt'>
+       </Tooltip>
+       <Tooltip title="Market Cap">
+       <td className='mobile-td-mkt'>
             <p className='total-cap td-right-align'>
                $ {convertNumber(coin.market_cap)}
             </p>
        </td>
+       </Tooltip>
      </tr>
      </Link>
   )

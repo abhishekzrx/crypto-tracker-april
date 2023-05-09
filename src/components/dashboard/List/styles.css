@@ -27,6 +27,7 @@
 .td-center-align{
          text-align: center;
 }
+
 .mobile-td-mkt{
                   display: none;
          }
@@ -51,4 +52,10 @@
          .mobile-td-mkt{
                   display: block;
          }
+         .desktop-td-mkt{
+            display: none;
+         }
+         .td-icon{
+            display: none;
+   }
 }
